@@ -140,6 +140,68 @@
   .nines{
     padding: 1em;
   }
+  @media (max-width: 568px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+  
+    .menuIcon {
+      display: block;
+      color: red;
+    }
+  
+    .logoContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navLinks {
+      align-items: center;
+      display: none;
+      margin-left: 7%;
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .navLinks.showMenu {
+      display: flex;
+    }
+  
+    .link {
+      margin: 3px 0;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .all {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .envelope {
+      margin: 5px 0;
+    }
+  
+  
+    .master {
+  display: none;
+    }
+  
+    
+    
+  .great {
+    font-size: 10px;
+    margin-left: 20px;
+    display: inline;
+  }
+ 
+   
+  }
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
