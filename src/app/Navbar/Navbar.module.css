@@ -64,7 +64,7 @@
     padding: 8px; /* Optional: Add padding for better hover area */
   }
   .all {
-    margin-left: 55%;
+    margin-left: 60%;
     gap: 1em;
   }
   
@@ -177,11 +177,11 @@
       text-align: left;
     }
   
-    .all {
+    /* .all {
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-    }
+    } */
   
     .envelope {
       margin: 5px 0;
