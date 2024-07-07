@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Image from 'next/image';
-import styles from './ContactGallery.module.css';
+import styles from "./contactGallery.module.css"
 
 const ContactGallery = () => {
   return (
