@@ -64,7 +64,7 @@
     padding: 8px; /* Optional: Add padding for better hover area */
   }
   .all {
-    margin-left: 65%;
+    margin-left: 60%;
     gap: 1em;
   }
   
@@ -162,7 +162,7 @@
     .navLinks {
       align-items: center;
       display: none;
-      margin-left: 5%;
+      margin-left: 3%;
       width: 70%;
       margin-top: 10px;
     }
@@ -179,13 +179,14 @@
   
     .all {
       flex-direction: column;
+      margin-right: 20px;
       align-items: center;
       justify-content: flex-start;
     }
   
     .envelope {
       margin: 5px 0;
-      margin-right: 15px;
+      margin-right: 8px;
     }
   
   
