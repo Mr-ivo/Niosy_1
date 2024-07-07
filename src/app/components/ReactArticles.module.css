@@ -1,0 +1,66 @@
+.articlesSection {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.articlesGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.articleCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.articleCard:hover {
+  transform: scale(1.05);
+}
+
+.articleImage {
+  width: 100%;
+  height: auto;
+}
+
+.articleInfo {
+  padding: 20px;
+}
+
+.articleDate {
+  color: #888;
+  font-size: 14px;
+}
+
+.articleTitle {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.authorImage {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.articleAuthor {
+  font-size: 14px;
+  color: #666;
+}

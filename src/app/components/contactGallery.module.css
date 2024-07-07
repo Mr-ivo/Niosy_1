@@ -1,0 +1,76 @@
+/* ContactGallery.module.css */
+
+.contactGalleryContainer {
+    background-color: #0D47A1;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contactInfo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  
+  .contactText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .gallery img {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .contactInfo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactItem {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

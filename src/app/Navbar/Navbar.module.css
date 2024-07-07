@@ -1,0 +1,275 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+.container2{
+  position: relative;
+  height: 100svh;
+  background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.5)), url(../../../public/crowd.jpg);
+
+
+}
+.logo img{
+  width: 80%;
+  height: 80%;
+  margin-left: 30%;
+
+}
+.link{
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.linksContainer{
+    justify-content: space-around;
+    gap: 20px;
+    font-family: 'sans-serif';
+    font-weight: 80;
+    /* margin-right: 20%; */
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-right: 5%;
+  }
+  .searchIcon {
+    color: #fff;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
+  .cartIcon {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: white; 
+    cursor: pointer;
+    
+  }
+  .envelope{
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 4px;
+    
+  }
+  .envelope:hover {
+    background-color: red; /* Transparent black background */
+    border-radius: 50%; /* Optional: Round the background */
+    padding: 8px; /* Optional: Add padding for better hover area */
+  }
+  .all {
+    margin-left: 65%;
+    gap: 1em;
+  }
+  
+  .cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  .hope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    
+  }
+  
+  .logos {
+    color: red;
+    font-family: 'RapFont', sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desc {
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .ten {
+    display: flex;
+    background-color: red;
+    color: #fff;
+    width:30% ;
+    padding: 1em;
+
+    /* margin-left: 15%; */
+  }
+  .nine {
+    display: flex;
+    padding: 1em;
+
+  }
+  .master {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    bottom: -20px;
+    gap: 5em;
+    transform: translate(45%,0);
+    width: fit-content;
+    box-shadow: 0 0 10px 3px;
+    overflow: hidden;
+  }
+ 
+  .great {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .greats {
+    font-size: 13px;
+    text-align: center;
+  
+  }
+  .nines{
+    padding: 1em;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+  
+    .menuIcon {
+      display: block;
+      color: red;
+    }
+  
+    .logoContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navLinks {
+      align-items: center;
+      display: none;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .navLinks.showMenu {
+      display: flex;
+    }
+  
+    .link {
+      margin: 5px 0;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .all {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .envelope {
+      margin: 5px 0;
+    }
+  
+  
+    .master {
+  display: none;
+    }
+  
+    
+    
+  .great {
+    font-size: 10px;
+    margin-left: 20px;
+    display: inline;
+  }
+ 
+   
+  }
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+      margin-left: 10px;
+    }
+  
+    .logo img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .navLinks {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  
+    .link {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  
+    .searchIcon, .cartIcon {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .cartCount {
+      top: -5px;
+      right: -5px;
+      padding: 1px 4px;
+      font-size: 10px;
+    }
+  
+    .all {
+      gap: 5px;
+    }
+  
+    .envelope {
+      size: 18px;
+    }
+  
+    .hope img {
+      width: 300px;
+      height: 300px;
+    }
+    
+  
+    .master {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .ten, .nines, .nine {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .menuIcon {
+        display: none; 
+    }
+}
+
+
+/* Responsive styles */
+@media (max-width: 1180px) {
+  .master {
+    display: none;
+  }
+}
