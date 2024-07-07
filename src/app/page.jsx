@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RecentArticles from './components/ReactArticles';
-import ContactGallery from './components/ContactGallery';
+import ContactGallery from './components/contactGallery';
 
 const Page = () => {
   const currentYear = new Date().getFullYear();
