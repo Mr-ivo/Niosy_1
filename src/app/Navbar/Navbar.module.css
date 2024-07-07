@@ -179,7 +179,6 @@
   
     .all {
       flex-direction: column;
-      margin-right: 8px;
       align-items: center;
       justify-content: flex-start;
     }
