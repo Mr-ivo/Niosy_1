@@ -1,0 +1,253 @@
+.dashboard {
+  padding: 2rem 5%;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-top: 70px; 
+}
+
+.addSongSection {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.addSongSection h2 {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.fileInputs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.fileInputs input[type="file"] {
+  padding: 0.6rem;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.fileInputs input[type="file"]::-webkit-file-upload-button {
+  padding: 0.5rem 1rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.fileInputs input[type="file"]::-webkit-file-upload-button:hover {
+  background: #4f46e5;
+}
+
+.submitBtn {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+  background: #a5a6f6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.songsList {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.songsList h2 {
+  color: #444;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.songsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.songCard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.songCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.songCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.songInfo {
+  padding: 1.5rem;
+}
+
+.songInfo h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.songInfo p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.songInfo audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 59, 48, 0.9);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.deleteBtn:hover {
+  background: rgb(255, 59, 48);
+  transform: scale(1.05);
+}
+
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.loading {
+  text-align: center;
+  color: #6366f1;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .fileInputs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem 3%;
+  }
+
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .addSongSection,
+  .songsList {
+    padding: 1.5rem;
+  }
+
+  .songsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard h1 {
+    font-size: 1.8rem;
+  }
+
+  .songsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .songCard img {
+    height: 180px;
+  }
+
+  .inputGroup input,
+  .submitBtn {
+    padding: 0.7rem;
+  }
+} 
