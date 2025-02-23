@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaPlay, FaPlus, FaInfo, FaFire, FaStar } from "react-icons/fa";
-import styles from "./NewAndPopular.module.css";
+import styles from './NewAndPopular.module.css';
 
 export default function NewAndPopular() {
   const [content, setContent] = useState({
